@@ -5,7 +5,8 @@ class Todos extends Component {
         super(props);
         this.state = { 
             todos : null,
-            todosState : null
+            todosState : null,
+            done : false
         }
     }
     getTodos = () => {
@@ -19,14 +20,14 @@ class Todos extends Component {
     }
     isCompleteTodos = () => {
        const completeTodos = this.state.todos.filter(todo => todo.completed === false)
-       this.setState({todosState: completeTodos})
-       this.state.todosState.map(todo => todo => <div key={todo.id} >{todo.title}</div>);
+       this.setState({todos: completeTodos})
+    //    this.state.todosState.map(todo => todo => <div key={todo.id} >{todo.title}</div>);
        console.log('투두 상태 ', this.state.todos)
     }
     isNotCompleteTodos = () => {
        const notCompleteTodos = this.state.todos.filter(todo => todo.completed === true)
-       this.setState({todosState: notCompleteTodos})
-       this.state.todosState.map(todo => todo => <div key={todo.id} >{todo.title}</div>);
+       this.setState({todos: notCompleteTodos})
+    //    this.state.todosState.map(todo => todo => <div key={todo.id} >{todo.title}</div>);
        console.log('투두 상태 ', this.state.todos)
     }
     componentDidMount(){
