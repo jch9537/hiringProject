@@ -1,0 +1,28 @@
+{
+  "bare_min": {
+    "json": 0,
+    "run": 0,
+    "eslint": 0,
+    "directory": 0,
+    "readme": 0,
+    "render_01": 0,
+    "render_02": 0,
+    "render_03": 0,
+    "render_04": 0,
+    "router": 0,
+    "fetch": 0,
+    "select_render": 0,
+    "css": 0,
+    "git": 0
+  },
+  "advanced": {
+    "link": 0,
+    "back": 0,
+    "deploy": 0,
+    "loading": 0,
+    "responsive": 0,
+    "posting": 0,
+    "reply": 0,
+    "env": 0
+  }
+}
